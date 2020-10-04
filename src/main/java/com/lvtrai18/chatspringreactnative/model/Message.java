@@ -24,8 +24,8 @@ public class Message implements Serializable{
     @Column(name="username")
     private String username;
     
-    @Column(name="encrytedpassword")
-    private String encrytedpassword;
+    @Column(name="password")
+    private String password;
     
     @Column(name="status")
     private Integer status;
@@ -52,13 +52,12 @@ public class Message implements Serializable{
 		this.username = username;
 	}
 
-	
-	public String getEncrytedpassword() {
-		return encrytedpassword;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setEncrytedpassword(String encrytedpassword) {
-		this.encrytedpassword = encrytedpassword;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public Integer getStatus() {
